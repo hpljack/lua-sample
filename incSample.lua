@@ -3,9 +3,10 @@ start = 3000
 --start = 10000
 --分段函数  后续阶段增长率下降
 res = 0
+startMoney = 5;
 for i=1,10,1 do
 	res = start + start * 0.10 -- 每天增长10%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
@@ -14,7 +15,7 @@ print("*********************************************")
 
 for i = 11, 20,1 do
 	res = start + start * 0.09 -- 每天增长9%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
@@ -23,7 +24,7 @@ print("*********************************************")
 
 for i = 21, 30,1 do
 	res = start + start * 0.08 -- 每天增长8%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
@@ -31,7 +32,7 @@ print("*********************************************")
 
 for i = 31, 40,1 do
 	res = start + start * 0.07 -- 每天增长7%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
@@ -39,17 +40,52 @@ print("*********************************************")
 
 for i = 41, 50,1 do
 	res = start + start * 0.06 -- 每天增长6%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
 print("*********************************************")
 for i = 51, 60,1 do
 	res = start + start * 0.05 -- 每天增长5%
-	print("day:"..i,res)
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
 	print("distance: "..res - start)
 	start = res
 end
+
+print("*********************************************")
+for i = 61, 70,1 do
+	res = start + start * 0.04 -- 每天增长4%
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
+	print("distance: "..res - start)
+	start = res
+end
+
+
+print("*********************************************")
+for i = 71, 80,1 do
+	res = start + start * 0.03 -- 每天增长3%
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
+	print("distance: "..res - start)
+	start = res
+end
+
+print("*********************************************")
+for i = 81, 90,1 do
+	res = start + start * 0.02 -- 每天增长2%
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
+	print("distance: "..res - start)
+	start = res
+end
+
+print("*********************************************")
+for i = 91, 100,1 do
+	res = start + start * 0.02 -- 每天增长2%
+	print("day:"..i,res.."start money:"..startMoney + math.floor((i - 1) / 2))
+	print("distance: "..res - start)
+	start = res
+end
+
+
 
 --[[
   一定不能贸然调整起步， 否则必然失败 每天必须保证保住本金 还有少量盈利
