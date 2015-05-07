@@ -5,4 +5,4 @@ function calcStep(initNo)
 	end
 end
 
-calcStep(6)
+calcStep(arg[1])
