@@ -1,4 +1,4 @@
-start = 3000
+--start = 3000
 --start = 204.5
 --start = 10000
 --分段函数  后续阶段增长率下降
@@ -17,7 +17,7 @@ end
 startMoney = 5;
 moneyInc = 2;
 
-incCalc(start,1,10,1,0.10,startMoney,moneyInc)
+incCalc(arg[1],1,10,1,0.10,startMoney,moneyInc)
 incCalc(res,11,20,1,0.09,startMoney,moneyInc)
 incCalc(res,21,30,1,0.08,startMoney,moneyInc)
 incCalc(res,31,40,1,0.07,startMoney,moneyInc)
