@@ -20,6 +20,9 @@ moneyInc = 2;
 if arg[1] == nil then --默认参数为3000 start
 	arg[1] = start
 end
+if arg[2] ~= nil then  -- 起步资金
+	startMoney = arg[2]
+end
 
 incCalc(arg[1],1,10,1,0.10,startMoney,moneyInc)
 incCalc(res,11,20,1,0.09,startMoney,moneyInc)
