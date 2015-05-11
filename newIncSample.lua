@@ -1,6 +1,6 @@
 function calcStep(initNo)
 	sum = 0;
-	for i = 1, 6,1 do
+	for i = 1, 7,1 do
 		sum = initNo + sum
 		print(i..": "..initNo.." calc: "..sum)
 		initNo = initNo * 3
