@@ -1,9 +1,12 @@
 function calcStep(initNo)
 	sum = 0;
+	pro = 9.5
 	for i = 1, 7,1 do
 		sum = initNo + sum
-		print(i..": "..initNo.." calc: "..sum)
+		net = pro - sum
+		print(i..": "..initNo.." calc: "..sum.." GetSum: "..pro.." Net: "..net)
 		initNo = initNo * 3
+		pro = pro * 3
 	end
 	print("sum of money: "..sum)
 end

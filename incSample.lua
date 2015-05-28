@@ -1,4 +1,4 @@
-start = 3000
+start = 4828.84
 --start = 204.5
 --start = 10000
 --分段函数  后续阶段增长率下降
@@ -24,8 +24,8 @@ if arg[2] ~= nil then  -- 起步资金
 	startMoney = arg[2]
 end
 
-incCalc(arg[1],1,10,1,0.10,startMoney,moneyInc)
-incCalc(res,11,20,1,0.09,startMoney,moneyInc)
+incCalc(arg[1],1,10,1,0.08,startMoney,moneyInc)
+incCalc(res,11,20,1,0.08,startMoney,moneyInc)
 incCalc(res,21,30,1,0.08,startMoney,moneyInc)
 incCalc(res,31,40,1,0.07,startMoney,moneyInc)
 incCalc(res,41,50,1,0.06,startMoney,moneyInc)
