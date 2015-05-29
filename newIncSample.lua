@@ -1,6 +1,6 @@
 function calcStep(initNo)
 	sum = 0;
-	pro = 9.5
+	pro = (initNo / 10) * 19
 	for i = 1, 7,1 do
 		sum = initNo + sum
 		net = pro - sum
